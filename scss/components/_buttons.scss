@@ -1,0 +1,85 @@
+.btn {
+	margin:0;
+	color: #fff;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	font-size: 15px;
+	font-weight: 700;
+	line-height: 20px;
+	padding: 13px 20px;
+	text-align: center;
+	position: relative;
+	background: #89bc2a;
+	display: inline-block;
+	text-decoration: none;
+	vertical-align: middle;
+	background-image: none;
+	touch-action: manipulation;
+	@include transition(.3s);
+
+	&:hover {
+		color: #fff;
+		background-color: #a9eb2d;
+		text-decoration: none;
+	}
+
+	&:active {
+		top: 1px;
+	}
+}
+
+.btn-oval {
+	@include border-radius(23px);
+}
+
+.btn-chat {
+	padding-left: 54px;
+	background: #89bc2a url("../img/icon-chat.png") 22px 50% no-repeat;
+}
+
+
+.btn-form {
+	margin: 16px 0 0 0;
+	width: 100%;
+	color: #fff;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	font-size: 16px;
+	font-weight: 900;
+	line-height: 20px;
+	padding: 10px 15px;
+	text-align: center;
+	position: relative;
+	background: #bbd300;
+	display: inline-block;
+	text-decoration: none;
+	vertical-align: middle;
+	background-image: none;
+	text-transform: uppercase;
+	touch-action: manipulation;
+	text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.2);
+	@include transition(.3s);
+	@include border-radius(5px);
+	@include gradient-vertical(#bbd300, #a4c400);
+	@include box-shadow(2px 2px 5px 0px rgba(0, 0, 0, 0.2));
+
+	&:hover {
+		color: #fff;
+		text-decoration: none;
+		@include gradient-vertical(#dbf700, #b8dc00);
+	}
+
+	&:active {
+		top: 1px;
+	}
+}
+
+.btn-yellow {
+	@include gradient-vertical(#ffd235, #f0b917);
+
+	&:hover {
+		@include gradient-vertical(#ffcc18, #e6ac00);
+	}
+}
