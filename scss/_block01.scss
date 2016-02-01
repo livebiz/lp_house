@@ -10,7 +10,7 @@
 	background: transparent;
 
 	&.fix-top {
-		background: rgba(45,53,69, 0.8);
+		background: rgba(255,255,255, 1);
 		border-bottom: 1px solid #9aa3b1;
 	}
 
@@ -113,6 +113,7 @@
 		.form-control {
 			color: #fff;
 			border-color: #fff;
+			@include placeholder(#fff);
 		}
 
 		.red {

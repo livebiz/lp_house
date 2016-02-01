@@ -1,0 +1,44 @@
+.b06 {
+	padding-bottom: 60px;
+
+	.how-we-work {
+		padding-top: 190px;
+		margin: 0 -15px ;
+		background: url("../img/step.png") 40px 0 no-repeat;
+
+		li {
+			width: 190px;
+			float: left;
+			font-size: 15px;
+			text-align: center;
+
+			&.item1 {
+				margin-right: 25px;
+			}
+
+			&.item2 {
+				margin-right: 25px;
+			}
+
+
+
+			span {
+				display: block;
+				margin-bottom: 2px;
+			}
+
+			.phone {
+				color: #282828;
+				font-size: 20px;
+				font-weight: 700;
+				margin-bottom: 2px;
+				display: inline-block;
+				text-decoration: none;
+			}
+
+			.btn {
+				margin-top: 10px;
+			}
+		}
+	}
+}

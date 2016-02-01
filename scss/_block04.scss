@@ -1,4 +1,5 @@
 .b04 {
+	padding-bottom: 60px;
 
 	.heading-image {
 		top: -145px;
@@ -7,5 +8,88 @@
 		height: 175px;
 		position: absolute;
 		background: url("../img/b04_top.png") 0 0 no-repeat;
+	}
+
+	.project {
+		margin: 0 -15px;
+
+		> li {
+			color: #fff;
+			width: 461px;
+			margin-bottom: 65px;
+			position: relative;
+			@include transition(.5s);
+
+			.project-box {
+				left: 0;
+				right: 0;
+				bottom: 0;
+				height: 76px;
+				text-align: center;
+				padding-bottom: 30px;
+				position: absolute;
+				background: rgba(0,0,0, 0.5);
+			}
+
+			.project-text {
+				left: 0;
+				right: 0;
+				height: 1px;
+				bottom: 76px;
+				overflow: hidden;
+				text-align: center;
+				padding: 30px 20px 0 20px;
+				position: absolute;
+				background: rgba(0,0,0, 0.5);
+				@include transition(.5s ease-out);
+
+				.project-text-title {
+					font-size: 25px;
+					font-weight: 700;
+					line-height: 30px;
+					position: relative;
+					margin-bottom: 20px;
+					padding-bottom: 20px;
+
+					&:before {
+						left: 50%;
+						bottom: 0;
+						width: 76px;
+						height: 4px;
+						content: '';
+						margin-left: -38px;
+						background: #afcb00;
+						position: absolute;
+					}
+
+					li {
+						font-size: 21px;
+						line-height: 36px;
+					}
+				}
+
+			}
+
+
+			&:hover {
+
+
+				.project-text {
+					height: 210px;
+					@include transition(.5s ease-out);
+				}
+			}
+		}
+	}
+
+	.get-project {
+		color: #afcb00;
+		font-size: 38px;
+		font-weight: 900;
+		line-height: 40px;
+		text-decoration: none;
+		font-family: $font-heavy;
+		text-transform: uppercase;
+		border-bottom: 1px dashed #afcb00;
 	}
 }

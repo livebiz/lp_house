@@ -1,0 +1,61 @@
+.b09 {
+	color: #fff;
+	height: 480px;
+	background: #000;
+	position: relative;
+
+	#map {
+		height: 480px;
+	}
+
+	.address {
+		top: 70px;
+		left: 15px;
+		width: 330px;
+		color: #454f63;
+		background: #fff;
+		position: absolute;
+		border: 8px solid #fff;
+		@include box-shadow(6px 6px 0px 0px rgba(0, 0, 0, 0.3));
+
+		.address-inner {
+			padding: 30px 25px;
+			background: #fff;
+			border: 8px solid #89bc2a;
+		}
+
+		.address-title {
+			font-size: 40px;
+			font-weight: 900;
+			line-height: 40px;
+			text-align: center;
+			margin-bottom: 10px;
+			font-family: $font-heavy;
+		}
+
+		ul {
+			margin: 0;
+			padding: 0 0 20px 0;
+			list-style: none;
+
+			li {
+				font-size: 15px;
+				font-weight: 300;
+				line-height: 20px;
+				position: relative;
+				margin-bottom: 6px;
+			}
+		}
+
+		.btn {
+			width: 100%;
+		}
+	}
+
+	.content {
+		top: 0;
+		left: 0;
+		right: 0;
+		position: absolute;
+	}
+}

@@ -1,0 +1,59 @@
+.b08 {
+	color: #000;
+	padding-bottom: 80px;
+
+	.h2 {
+		margin-bottom: 80px;
+	}
+
+	.motive {
+		width: 480px;
+
+		.motive-title {
+			font-size: 33px;
+			font-weight: 900;
+			line-height: 40px;
+			margin-bottom: 30px;
+			font-family: $font-heavy;
+			text-transform: uppercase;
+		}
+
+		li {
+			color: #000;
+			width: 480px;
+			display: table;
+			font-size: 13px;
+			line-height: 23px;
+			padding-left: 130px;
+			margin-bottom: 20px;
+
+			span {
+				height: 120px;
+				display: table-cell;
+				vertical-align: middle;
+			}
+		}
+
+		&.valid {
+
+			.motive-title {
+				color: #afcb00;
+			}
+			
+			li {
+				background: url("../img/valid.png") 0 50% no-repeat;
+			}
+		}
+
+		&.invalid {
+
+			.motive-title {
+				color: #d24a43;
+			}
+
+			li {
+				background: url("../img/invalid.png") 0 50% no-repeat;
+			}
+		}
+	}
+}

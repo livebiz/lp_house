@@ -1,0 +1,57 @@
+.b05 {
+	color: #fff;
+	height: 852px;
+	background: url("../img/b05_bg.jpg") 50% 0 no-repeat;
+
+	.h2 {
+		span {
+			color: #fff;
+		}
+	}
+
+	.advantages {
+
+		li {
+			width: 25%;
+			float: left;
+			height: 260px;
+			font-size: 15px;
+			text-align: center;
+			position: relative;
+			padding-top: 180px;
+			margin-bottom: 30px;
+
+			&.item1 {
+				background: url("../img/b05_item1.png") 50% 0 no-repeat;
+			}
+
+			&.item2 {
+				background: url("../img/b05_item2.png") 50% 0 no-repeat;
+			}
+
+			&.item3 {
+				background: url("../img/b05_item3.png") 50% 0 no-repeat;
+			}
+
+			&.item4 {
+				background: url("../img/b05_item4.png") 50% 0 no-repeat;
+			}
+
+			&.item5 {
+				background: url("../img/b05_item5.png") 50% 0 no-repeat;
+			}
+
+			&.item6 {
+				background: url("../img/b05_item6.png") 50% 0 no-repeat;
+			}
+
+			&.item7 {
+				background: url("../img/b05_item7.png") 50% 0 no-repeat;
+			}
+
+			&.item8 {
+				background: url("../img/b05_item8.png") 50% 0 no-repeat;
+			}
+		}
+	}
+}
