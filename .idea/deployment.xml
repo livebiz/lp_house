@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" autoUpload="Always" serverName="house" autoUploadExternalChanges="true">
+  <component name="PublishConfigData" serverName="brigada154_zephyrus" autoUploadExternalChanges="true">
     <serverData>
       <paths name="109.120.162.1">
         <serverdata>
@@ -90,6 +90,13 @@
         <serverdata>
           <mappings>
             <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="brigada154_zephyrus">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/domains/brigada54.ru" local="$PROJECT_DIR$" web="/" />
           </mappings>
         </serverdata>
       </paths>
@@ -437,6 +444,5 @@
         </serverdata>
       </paths>
     </serverData>
-    <option name="myAutoUpload" value="ALWAYS" />
   </component>
 </project>

@@ -3,24 +3,22 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $type = $_POST['type'];
     $name = $_POST['name'];
     $phone = $_POST['phone'];
-    $email = $_POST['email'];
     $message = $_POST['message'];
 
 
 	
     require 'class.phpmailer.php';
-    $thm = 'Вам отправлено сообщение с сайта Aroma.cosmetic - ' . $type;
+    $thm = 'Вам отправлено сообщение с сайта Doma - ' . $type;
     $msg = "<strong>Форма:</strong> $type <br/>";
     if(isset($name)){$msg .= "<strong>Имя:</strong> $name <br/>";}
     if(isset($phone)){$msg .= "<strong>Телефон:</strong> $phone <br/>";}
-    if(isset($email)){$msg .= "<strong>Email:</strong> $email <br/>";}
     if(isset($message)){$msg .= "<strong>Вопрос:</strong> $message <br/>";}
 
 
     $mail = new PHPMailer();
-    $mail->From = 'Aroma.cosmetic'; // от кого
-    $mail->FromName = 'Aroma.cosmetic'; // от кого
-    $mail->AddAddress('Aroma.cosmetic@yandex.ru', ''); // кому - адрес, Имя
+    $mail->From = 'doma'; // от кого
+    $mail->FromName = 'doma'; // от кого
+    $mail->AddAddress('brigada154@yandex.ru', ''); // кому - адрес, Имя
 
     $mail->IsHTML(true); // выставляем формат письма HTML
     $mail->Subject = $thm; // тема письма

@@ -20,12 +20,12 @@
 
 	&:hover {
 		color: #fff;
-		background-color: #a9eb2d;
+		background-color: #95c737;
 		text-decoration: none;
 	}
 
 	&:active {
-		top: 1px;
+		@include box-shadow(inset 0px 2px 5px 0px rgba(0, 0, 0, 0.35));
 	}
 }
 
@@ -62,13 +62,13 @@
 	text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.2);
 	@include transition(.3s);
 	@include border-radius(5px);
-	@include gradient-vertical(#bbd300, #a4c400);
+	@include gradient-vertical(#bbd300, #a5c400);
 	@include box-shadow(2px 2px 5px 0px rgba(0, 0, 0, 0.2));
 
 	&:hover {
 		color: #fff;
 		text-decoration: none;
-		@include gradient-vertical(#dbf700, #b8dc00);
+		@include gradient-vertical(#c6dd1b, #b4d215);
 	}
 
 	&:active {
@@ -77,9 +77,9 @@
 }
 
 .btn-yellow {
-	@include gradient-vertical(#ffd235, #f0b917);
+	@include gradient-vertical(#f4ca1f, #f0ba17);
 
 	&:hover {
-		@include gradient-vertical(#ffcc18, #e6ac00);
+		@include gradient-vertical(#f6d037, #f3c12a);
 	}
 }

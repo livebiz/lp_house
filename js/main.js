@@ -23,6 +23,12 @@ $(function($){
     });
 });
 
+// ----- Маска ----------
+jQuery(function($){
+    $("input[name='phone']").mask("+7(999) 999-9999");
+});
+
+
 //  Modal
 
 $(".btn-modal").fancybox({
@@ -91,3 +97,33 @@ function init(){
     myMap.behaviors.disable('multiTouch');
     myMap.geoObjects.add(myPlacemark);
 }
+
+
+$(document).ready(function() {
+
+    $('.btn-send').click(function() {
+
+        $('body').find('form:not(this)').children('div').removeClass('red'); //удаление всех сообщение об ошибке(валидатора)
+        var answer = checkForm($(this).closest('form').get(0)); //ответ от валидатора
+        if(answer != false)
+        {
+            var $form = $(this).closest('form'),
+                type    =     $('input[name="type"]', $form).val(),
+                name    =     $('input[name="name"]', $form).val(),
+                phone   =     $('input[name="phone"]', $form).val(),
+                message =     $('textarea[name="message"]', $form).val();
+            console.log(name, phone, type, message);
+            $.ajax({
+                type: "POST",
+                url: "form-handler.php",
+                data: {name: name, phone: phone, type:type, message:message}
+            }).done(function(msg) {
+                $('form').find('input[type=text], textarea').val('');
+                console.log('удачно');
+                document.location.href = "http://brigada54.ru/done.html";
+            });
+        }
+    });
+
+    // tabs
+});

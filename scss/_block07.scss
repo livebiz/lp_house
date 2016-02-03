@@ -23,7 +23,21 @@
 				li {
 					float: left;
 					width: 163px;
+					position: relative;
 					margin: 0 8px 8px 0;
+
+					a {
+						top:0;
+						left: 0;
+						right: 0;
+						bottom: 0;
+						display: block;
+						position: absolute;
+
+						&:hover {
+							background: rgba(149,199,55, 0.65) url("../img/icon-loop.png") 50% 50% no-repeat;
+						}
+					}
 				}
 			}
 
@@ -64,7 +78,6 @@
 			}
 		}
 
-
 		.slider-nav {
 			top: 50%;
 			width: 56px;
@@ -77,11 +90,19 @@
 			&.prev {
 				left: -100px;
 				background-position: 0 0;
+
+				&:hover {
+					background-position: 0 -109px;
+				}
 			}
 
 			&.next {
 				right: -100px;
 				background-position: -56px 0;
+
+				&:hover {
+					background-position: -56px -109px;
+				}
 			}
 		}
 	}
