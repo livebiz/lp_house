@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="7cc157ff-83e7-4a15-ab79-0949439561b8" name="http://brigada54.ru/" url="http://brigada54.ru">
+        <fileTransfer host="brigada54.ru" port="21" password="dffbdfdddf9bdf9fdf98df9ddf92df93" username="brigada154_zephyrus">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+      <webServer id="440f9336-f83d-483d-a936-63c314dc443d" name="zephyrus_house" url="http://zephyrus.ru/project/2016/lp_home">
+        <fileTransfer host="zephyrus.ru" port="21" password="df9ddfc3dff8dfc5dffcdfe1dfc3dfc8dfd3dfc1" username="admin_zephyrus">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

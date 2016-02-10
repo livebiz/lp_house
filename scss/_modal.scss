@@ -47,7 +47,7 @@
 	.form-text {
 		color: #000;
 		font-size: 13px;
-		font-weight: 300;
+		font-weight: 700;
 		line-height: 18px;
 		padding: 10px 20px;
 		text-align: center;
@@ -76,8 +76,10 @@
 		}
 	}
 
+
 	.sup {
-		font-size: 12px;
+		font-size: 11px;
+		margin: 0 -10px;
 	}
 
 	.secret {
@@ -86,7 +88,7 @@
 		line-height: 20px;
 		padding-left: 18px;
 		margin-bottom: 15px;
-		background: url("../img/icon-lock-white.png") 0 50% no-repeat;
+		background: url("../img/icon-lock.png") 0 50% no-repeat;
 	}
 
 	.order-list {

@@ -599,7 +599,7 @@ label {
   .form-block .form-text {
     color: #000;
     font-size: 13px;
-    font-weight: 300;
+    font-weight: 700;
     line-height: 18px;
     padding: 10px 20px;
     text-align: center;
@@ -623,14 +623,15 @@ label {
       position: absolute;
       background: url("../img/form-arrow.png") 0 0 no-repeat; }
   .form-block .sup {
-    font-size: 12px; }
+    font-size: 11px;
+    margin: 0 -10px; }
   .form-block .secret {
     font-size: 11px;
     font-weight: 600;
     line-height: 20px;
     padding-left: 18px;
     margin-bottom: 15px;
-    background: url("../img/icon-lock-white.png") 0 50% no-repeat; }
+    background: url("../img/icon-lock.png") 0 50% no-repeat; }
   .form-block .order-list {
     margin: 0;
     list-style: none;
@@ -844,12 +845,15 @@ label {
   background: url("../img/b01_bg.jpg") 50% 0 no-repeat; }
   .b01 .content {
     height: 730px; }
+  .b01 .left-col {
+    width: 600px;
+    float: left; }
   .b01 h1 {
     color: #fff;
-    float: left;
     font-size: 37px;
     font-weight: 900;
     line-height: 40px;
+    margin-bottom: 20px;
     font-family: "UniSansCAPS";
     text-transform: uppercase;
     text-shadow: 0px 8px 20px black; }
@@ -858,6 +862,15 @@ label {
       padding: 4px 4px;
       background: #afcb00;
       display: inline-block; }
+  .b01 .text {
+    width: 500px;
+    color: #000;
+    height: 38px;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18px;
+    background: #ffffff; }
   .b01 .form-block {
     color: #fff;
     float: right;
@@ -1194,6 +1207,7 @@ label {
         margin-top: 10px; }
 
 .b07 {
+  height: 1430px;
   padding-bottom: 80px;
   background: url("../img/b07_bg.jpg") 50% 50% no-repeat; }
   .b07 .portfolio {
@@ -1267,6 +1281,29 @@ label {
         background-position: -56px 0; }
         .b07 .portfolio .slider-nav.next:hover {
           background-position: -56px -109px; }
+  .b07 .form-container {
+    padding-top: 150px; }
+  .b07 .content {
+    float: left;
+    width: 572px;
+    height: 283px;
+    margin-top: 60px;
+    padding-top: 50px;
+    padding-left: 45px;
+    margin-left: -45px;
+    background: url("../img/b03-heading.png"); }
+  .b07 .heading {
+    color: #fff;
+    float: left;
+    font-size: 25px;
+    font-weight: 900;
+    line-height: 30px;
+    margin-bottom: 15px;
+    font-family: "UniSansCAPS";
+    text-transform: uppercase;
+    text-shadow: 0px 8px 20px black; }
+  .b07 .form-block {
+    float: right; }
 
 .b08 {
   color: #000;
@@ -1355,31 +1392,5 @@ label {
     left: 0;
     right: 0;
     position: absolute; }
-
-.b10 {
-  padding-top: 60px;
-  padding-bottom: 120px;
-  background: url("../img/b03_bg.jpg") 50% 100% no-repeat; }
-  .b10 .content {
-    float: left;
-    width: 572px;
-    height: 283px;
-    margin-top: 60px;
-    padding-top: 50px;
-    padding-left: 45px;
-    margin-left: -45px;
-    background: url("../img/b03-heading.png"); }
-  .b10 .heading {
-    color: #fff;
-    float: left;
-    font-size: 25px;
-    font-weight: 900;
-    line-height: 30px;
-    margin-bottom: 15px;
-    font-family: "UniSansCAPS";
-    text-transform: uppercase;
-    text-shadow: 0px 8px 20px black; }
-  .b10 .form-block {
-    float: right; }
 
 /*# sourceMappingURL=main.css.map */

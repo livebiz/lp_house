@@ -86,12 +86,16 @@
 		height: 730px;
 	}
 
+	.left-col {
+		width: 600px;
+		float: left;
+	}
 	h1 {
 		color: #fff;
-		float: left;
 		font-size: 37px;
 		font-weight: 900;
 		line-height: 40px;
+		margin-bottom: 20px;
 		font-family: $font-heavy;
 		text-transform: uppercase;
 		text-shadow: 0px 8px 20px rgba(0, 0, 0, 1);
@@ -102,6 +106,17 @@
 			background: #afcb00;
 			display: inline-block;
 		}
+	}
+
+	.text {
+		width: 500px;
+		color: #000;
+		height: 38px;
+		padding: 10px;
+		font-size: 16px;
+		font-weight: 700;
+		line-height: 18px;
+		background: #ffffff;
 	}
 
 	.form-block {
@@ -120,7 +135,6 @@
 
 			.form-control {
 				border-color: #ff0000;
-
 			}
 		}
 	}
